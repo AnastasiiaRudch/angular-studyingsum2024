@@ -1,0 +1,62 @@
+.movie-card{
+  border: 1px solid #ddd;
+  border-right: 8px;
+  padding: 16px;
+  max-width: 368px;
+  text-align: center;
+  background-color: wheat;
+}
+
+.movie-image{
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie-details{
+  margin-top: 16px;
+}
+
+button{
+  margin: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  /*width: 150px; !* Установите фиксированную ширину для всех кнопок *!*/
+  /*height: 40px; !* Установите фиксированную высоту для всех кнопок *!*/
+  display: inline-flex; /* Используем flex для центрирования содержимого */
+  align-items: center; /* Центрируем содержимое по вертикали */
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  font-size: 12px; /* Установите размер шрифта */
+  font-family: 'Arial', sans-serif; /* Установите нужное семейство шрифтов */
+}
+
+button:first-of-type{
+  background-color: aquamarine;
+  color: darkslategrey;
+}
+
+button:last-of-type{
+  background-color: pink;
+  color: deeppink;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Центрирует кнопки по горизонтали */
+  gap: 20px; /* Отступ между кнопками */
+  margin: 0 auto; /* Центрирует контейнер */
+}
+
+.font-button{
+  font-size: 8px;
+}
+
+mat-icon {
+  font-size: 24px; /* Увеличим размер иконки */
+  margin-right: 8px; /* Отступ между иконкой и текстом */
+  line-height: 1; /* Устанавливаем высоту строки для иконки */
+  display: inline-flex; /* Убедитесь, что иконка отображается как flex элемент */
+  align-items: center; /* Центрируем содержимое иконки по вертикали */
+  justify-content: center; /* Центрируем содержимое иконки по горизонтали */
+}

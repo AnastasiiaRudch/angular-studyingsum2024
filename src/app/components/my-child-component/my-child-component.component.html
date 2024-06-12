@@ -1,0 +1,13 @@
+<div class="movie-card">
+  <img [src]="data.backdrop_path" alt="{{ data.title }}" class="movie-image">
+  <div class="movie-details">
+    <h2>{{ data.title }}</h2>
+    <p>{{ data.overview }}</p>
+    <p>Рейтинг: {{ data.rating }}</p>
+    <div class="button-container">
+      <button mat-button class="font-button" (click)="addToFavoritesChild()"><mat-icon>favorite</mat-icon>Додати до улюблених</button>
+      <button mat-button class="font-button" (click)="addToWatchListChild()"><mat-icon>list_alt_add</mat-icon>Додати до списку перегляду</button>
+    </div>
+<!--    <button mat-button><mat-icon>home</mat-icon>Home</button>-->
+  </div>
+</div>
