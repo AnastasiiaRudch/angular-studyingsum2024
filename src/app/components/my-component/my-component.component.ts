@@ -22,6 +22,8 @@ import {MyChildComponentComponent} from "../my-child-component/my-child-componen
 export class MyComponentComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked,
                                               AfterViewInit, AfterViewChecked, OnDestroy{
 
+  public favorite: string | undefined;
+  public watchlist: string | undefined;
   constructor() {
     console.log('constructor');//1
   }
@@ -37,10 +39,12 @@ export class MyComponentComponent implements OnInit, OnChanges, DoCheck, AfterCo
 
   handleAddFavoriteParent(movieTitle:string){
     console.log('Added to Favorite: ' + movieTitle);
+    this.favorite = movieTitle;
   }
 
   handleAddWatchListParent(movieTitle:string){
     console.log('Added to WatchList: ' + movieTitle);
+    this.watchlist = movieTitle;
   }
 
 

@@ -1,5 +1,27 @@
-
+<div class="movies-section">
 <app-my-child-component [data]="movie" (addFavoritesChildOutput)="handleAddFavoriteParent($event)"
 (addWatchListChildOutput)="handleAddWatchListParent($event)">
 </app-my-child-component>
 <!--Output - Kolu v Child componenti spracyuye (addFavoritesChildOutput), v nas spracyuye handleAddFavoriteParent-->
+</div>
+<div class="sections-container">
+<div class="favorites-section">
+  <h2>Favorites</h2>
+  <div class="favorites-container">{{favorite}}
+<!--    <app-my-child-component-->
+<!--      *ngFor="let favorite of favorites"-->
+<!--      [data]="favorite">-->
+<!--    </app-my-child-component>-->
+  </div>
+</div>
+
+<div class="watchlist-section">
+  <h2>WatchList</h2>
+  <div class="watchlist-container">{{watchlist}}
+<!--    <app-my-child-component-->
+<!--      *ngFor="let watchlist of watchlistItems"-->
+<!--      [data]="watchlist">-->
+<!--    </app-my-child-component>-->
+  </div>
+</div>
+</div>

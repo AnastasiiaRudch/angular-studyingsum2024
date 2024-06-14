@@ -22,29 +22,39 @@ button{
   border: none;
   border-radius: 1px;
   cursor: pointer;
-  /*width: 150px; !* Установите фиксированную ширину для всех кнопок *!*/
-  /*height: 40px; !* Установите фиксированную высоту для всех кнопок *!*/
+  width: 150px; /* Установите фиксированную ширину для всех кнопок */
+  height: 40px; /* Установите фиксированную высоту для всех кнопок */
   display: inline-flex; /* Используем flex для центрирования содержимого */
   align-items: center; /* Центрируем содержимое по вертикали */
   justify-content: center; /* Центрируем содержимое по горизонтали */
   font-size: 12px; /* Установите размер шрифта */
   font-family: 'Arial', sans-serif; /* Установите нужное семейство шрифтов */
+  white-space: nowrap; /* Запрещает перенос текста на новую строку */
 }
 
+/*button:first-of-type{*/
+/*  background-color: aquamarine;*/
+/*  color: darkslategrey;*/
+/*}*/
+
+/*button:last-of-type{*/
+/*  background-color: pink;*/
+/*  color: deeppink;*/
+/*}*/
 button:first-of-type{
-  background-color: aquamarine;
-  color: darkslategrey;
+  background-color: #d0743b;
+  color: #41210d;
 }
 
 button:last-of-type{
-  background-color: pink;
-  color: deeppink;
+  background-color: #d09c3b;
+  color: #41310d;
 }
 
 .button-container {
   display: flex;
   justify-content: center; /* Центрирует кнопки по горизонтали */
-  gap: 20px; /* Отступ между кнопками */
+  gap: 10px; /* Отступ между кнопками */
   margin: 0 auto; /* Центрирует контейнер */
 }
 

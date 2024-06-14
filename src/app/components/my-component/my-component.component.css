@@ -1,3 +1,44 @@
 .class-name{
   color: aquamarine;
 }
+.movies-section, .favorites-section, .watchlist-section {
+  margin: 20px;
+}
+
+.sections-container {
+  display: flex;
+  justify-content: space-between; /* Размещает секции по краям */
+  margin: 20px;
+}
+
+.favorites-section, .watchlist-section {
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+  flex: 1; /* Позволяет секциям занимать равное пространство */
+  margin: 0 10px;
+}
+.favorites-section {
+  background-color: #d0743b;
+}
+.watchlist-section {
+  background-color: #d09c3b;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.favorites-container, .watchlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sections-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
